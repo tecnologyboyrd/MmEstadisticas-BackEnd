@@ -5,9 +5,9 @@ const { io } = require('../index');
 io.on('connection', client=>{
     console.log('Cliente Connectado');
 
-    client.on('disconnect', ()=>{
-        console.log('Cliente Desconectado');
-    });
+client.on('disconnect', ()=>{
+    console.log('Cliente Desconectado');
+});
 
     // client.on('mensaje' , (payload)=>{
 

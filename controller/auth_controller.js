@@ -115,7 +115,7 @@ const renewToken = async (req, res = response)=>{
 
     res.json({
         ok: true,
-        getDbUser,
+        user: getDbUser,
         msg:'Renew Token working.',
         token: newJwt,
 

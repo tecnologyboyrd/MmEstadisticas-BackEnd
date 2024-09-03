@@ -24,7 +24,17 @@ require('./sockets/soket');
 
 
  //Definicion de rutas
- app.use('/api/login', require('./routes/auth_route'))
+ app.use('/api/login', require('./routes/auth_route'));
+
+ app.use('/api/pastor', require('./routes/pastor_route'));
+
+app.use('/api/country', require('./routes/country_route'));
+
+app.use('/api/state', require('./routes/state_route'));
+
+app.use('/api/city', require('./routes/city_route'));
+
+
 
 
 
